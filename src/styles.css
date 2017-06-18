@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+/* https://www.bootply.com/108614 - how to manage my frontpage*/
+
+body,html {
+  height: 100%;
+}
+
+body {
+  padding-top: 50px;
+  background: rgb(232,232,232);
+}
