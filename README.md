@@ -1,6 +1,6 @@
 # WhereAmI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
+This is just an experimental angular app created for exercise purposes.
 
 ## Development server
 
