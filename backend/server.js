@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
-var messages = [{text:'some text', owner:'Tim'}, {text:'some other text', owner:'Billy'},  {text:'E gotin pich', owner:'Venci'}];
+var messages = [{text:'E otkachen', owner:'Dimo'},
+                {text:'e lut', owner:'Niko'}, 
+                 {text:'E gotin pich', owner:'Venci'},
+                  {text:'E nai krasiviq', owner:'Jorkata'}];
 
 app.use((req,res,next) => { // this handles requests from different url
     res.header("Access-Control-Allow-Origin", "*");

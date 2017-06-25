@@ -1,0 +1,12 @@
+.dimo p{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 600px) {
+  .dimo p{
+    display: none;
+    
+    }
+}

@@ -6,21 +6,21 @@ import { HalfBackgroundComponent } from './half-background/half-background.compo
 import { NavbarComponent } from './navbar/navbar.component';
 import { MessageComponent } from './message/message.component';
 import { WebService } from './web.service';
-import { HttpModule, JsonpModule } from '@angular/http';
+import { HttpModule } from '@angular/http';
+import { RandomComponent } from './random/random.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HalfBackgroundComponent,
     NavbarComponent,
-    MessageComponent
+    MessageComponent,
+    RandomComponent
   ],
   imports: [
     BrowserModule,
     MaterialModule,
     HttpModule,
-    JsonpModule
-    
   ],
   providers: [ WebService ],
   bootstrap: [ AppComponent ]

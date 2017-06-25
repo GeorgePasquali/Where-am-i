@@ -13,10 +13,7 @@ import {
 })
 export class MessageComponent {
 
-  messages = [{
-    text: 'We are busy students, so it will take some more time for us to create a stable beta. Sorry',
-    owner: 'Comming Soon'
-  }];
+  messages = [];
 
   constructor(private webService: WebService) {}
 
