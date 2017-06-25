@@ -1,19 +1,30 @@
-import { Component, OnInit } from '@angular/core';
-// import { WebService } from '../web.service';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
+import {
+  WebService
+} from '../web.service';
 
 @Component({
   selector: 'app-message',
   templateUrl: './message.component.html',
   styleUrls: ['./message.component.css']
 })
-export class MessageComponent implements OnInit {
+export class MessageComponent {
 
-  messages = [{text:'some text', owner:'Tim'}, {text:'some other text', owner:'Billy'}];
+  messages = [{
+    text: 'We are busy students, so it will take some more time for us to create a stable beta. Sorry',
+    owner: 'Comming Soon'
+  }];
 
-  constructor() { }
+  constructor(private webService: WebService) {}
 
-   ngOnInit() {
-   
+  async ngOnInit() {
+
+     var response = await this.webService.getMessages();
+     this.messages = response.json();
+
   }
 
 }

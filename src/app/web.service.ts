@@ -1,19 +1,16 @@
-// import { Http } from '@angular/http';
-// import 'rxjs/add/operator/toPromise';
-// import { Injectable } from '@angular/core';
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/toPromise';
+import { Injectable } from '@angular/core';
 
 
-// @Injectable()
-// export class WebService {
-//     /**
-//      *
-//      */
-//     constructor(private _http: Http) {
-        
-        
-//     }
+@Injectable()
+export class WebService {
+    
+    
+    constructor(private http: Http) {}
 
-//     getMessages(){
-//         return this._http.get('localhost:1234/messages').toPromise();
-//     }
-// }
+    getMessages() /*: Promise<any> */{
+      return  this.http.get('http://localhost:1234/messages').toPromise();
+      //return [{text:'some text', owner:'Tim'}, {text:'some other text', owner:'Billy'}];
+    }
+}
